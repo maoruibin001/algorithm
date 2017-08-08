@@ -10,7 +10,6 @@ const bubble = function(arr) {
             arr[j + 1] = k;
             }
         }
-        
     }
     return ret;
 }
