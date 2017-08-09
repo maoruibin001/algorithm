@@ -1,4 +1,24 @@
-// 冒泡排序优化
+// 选择排序
+function selection(arr, count) {
+    console.time('选择排序排序耗时1');
+    count = count || 0;
+    let minIndex, temp;
+    for (var i = 0; i < arr.length; i ++) {
+        minIndex = i;
+        for (let j = i; j < arr.length; j ++) {
+            count ++;
+            if (arr[j] < arr[minIndex]) {
+                minIndex = [j];
+            }
+        }
+        temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
+    }
+    console.timeEnd('选择排序排序耗时1');
+    return {arr, count};
+}
+
 var optimiBubble = function(arr, count) {
      console.time('改进后冒泡排序耗时1');
     count = count || 0;
@@ -28,7 +48,9 @@ var sortArr = [];
 for (var i = 0;i < 1000; i ++) {
     sortArr.push(Math.floor(Math.random() * 10000));
 }
-var ret = optimiBubble(sortArr);
+var sortArr1 = sortArr.concat([]);
+var ret = selection(sortArr);
+var ret2 = optimiBubble(arr);
 
-console.log('排序结果为： ', ret.arr);
-console.log('排序次数为： ', ret.count);
+console.log(ret);
+console.log(ret2)
