@@ -50,7 +50,5 @@ for (var i = 0;i < 1000; i ++) {
 }
 var sortArr1 = sortArr.concat([]);
 var ret = selection(sortArr);
-var ret2 = optimiBubble(arr);
 
 console.log(ret);
-console.log(ret2)
