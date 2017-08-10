@@ -23,11 +23,13 @@ function quick(arr) {
 
 var sortArr = [];
 for (var i = 0;i < 1000; i ++) {
-    sortArr.push(Math.floor(Math.random() * 10000));
+    sortArr.push(parseInt(Math.random() * 10000));
 }
 
 console.time('native sort ');
-console.log(sortArr.sort());
+console.log(sortArr.sort(function(a, b) {
+    return a- b;
+}));
 console.timeEnd('native sort ');
 
 console.time('快速排序耗时 ');
