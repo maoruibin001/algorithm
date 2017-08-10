@@ -19,6 +19,6 @@ npm run test
 ## bug处理
 * 发现bug请在issues留言或者发送邮件到595123108@qq.com 我会及时处理，谢谢。
 
-#选择排序演示
-![image](https://github.com/maoruibin001/algorithm/raw/master/src/images/select.gif)
-https://github.com/maoruibin001/algorithm
+# 选择排序演示
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/select.gif)
