@@ -45,5 +45,12 @@ function count2(arr) {
     }
     return B;
 }
-var arr = [1,3, 1, 2];
-console.log(count2(arr)); 
+
+
+var sortArr = [];
+for (var i = 0;i < 1000; i ++) {
+    sortArr.push(Math.floor(Math.random() * 10000));
+}
+console.time('计数排序耗时 ');
+console.log(count2(sortArr)); 
+console.timeEnd('计数排序耗时 ');
