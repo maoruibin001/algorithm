@@ -22,10 +22,12 @@ const bubble = function(arr, count) {
         count
     };
 }
-let arr=[44,38,5,47,15,36,26,27,2,46,4,3,19,50,48,2,44,38,5,47,15,36,236,27,2,46,4,3,19,50,48,6,26,27,2,46,4,3,19,50,48,2,44,38,5,47,15,36,26,27,28,466];
 
-console.log('arr1',arr);
-let ret = bubble(arr);
 
-console.log('排序结果为： ', ret.arr);
-console.log('排序次数为： ', ret.count);
+var sortArr = [];
+for (var i = 0;i < 1000; i ++) {
+    sortArr.push(Math.floor(Math.random() * 10000));
+}
+console.time('冒泡排序耗时 ');
+console.log(bubble(sortArr));
+console.timeEnd('冒泡排序耗时 ');

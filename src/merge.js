@@ -6,8 +6,6 @@ function mergeSort(arr) {
     let leftArr = arr.slice(0, middle), rightArr = arr.slice(middle);
     let retLeftArr = mergeSort(leftArr);
     let retRightArr = mergeSort(rightArr);
-    console.log('retLeftArr: ', retLeftArr);
-    console.log('retRightArr: ', retRightArr);
     let ret =  merge(retLeftArr, retRightArr);
     return ret;
 }
@@ -33,5 +31,10 @@ function merge(leftArr, rightArr) {
     return result;
 }
 
-var arr=[3,44,38, 4];
-console.log(mergeSort(arr));
+var sortArr = [];
+for (var i = 0;i < 1000; i ++) {
+    sortArr.push(Math.floor(Math.random() * 10000));
+}
+console.time('归并排序耗时 ');
+console.log(mergeSort(sortArr));
+console.timeEnd('归并排序耗时 ');
