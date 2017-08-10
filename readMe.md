@@ -42,6 +42,14 @@ npm run test
 
 ![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/quick.gif)
 
-### 计数排序（找到当前元素前面还有多少个比自己小的元素）
+### 计数排序（找到当前元素前面还有多少个比自己小的元素（非比较排序））
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/count.gif)
+
+### 桶排序（划分区间的基数排序）
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/count.gif)
+
+### 基数排序（按位数收集再采用计数排序）
 
 ![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/count.gif)
