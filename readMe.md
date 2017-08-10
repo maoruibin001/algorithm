@@ -19,6 +19,25 @@ npm run test
 ## bug处理
 * 发现bug请在issues留言或者发送邮件到595123108@qq.com 我会及时处理，谢谢。
 
-# 选择排序演示
+### 选择排序演示
 
 ![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/select.gif)
+
+### 插入排序演示
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/insert.gif)
+
+
+### 希尔排序演示
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/shell.jpg)
+
+
+### 归并排序演示
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/merge.gif)
+
+
+### 快速排序演示
+
+![图片来源于网络](https://github.com/maoruibin001/algorithm/raw/master/src/images/quick.gif)
