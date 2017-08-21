@@ -1,3 +1,4 @@
+var count = 0;
 function shellSort(arr) {
     let gap = 1, times = 2;
     while(gap < arr.length / times) {
@@ -9,6 +10,7 @@ function shellSort(arr) {
             let temp = arr[i];
             flag = i;
             for (let j = i - gap; j >= 0 && arr[j] > temp; j-= gap) {
+                count ++;
                 arr[j + gap] = arr[j];
                 flag = j;
             }
@@ -19,8 +21,8 @@ function shellSort(arr) {
     return arr;
 }
 var sortArr = [];
-for (let i = 0;i < 50; i ++) {
-    sortArr.push(Math.floor(Math.random() * 100));
+for (var i = 0; i < 1000; i ++) {
+    sortArr.push(parseInt(Math.random() * 1000));
 }
 var nativeSort = sortArr.concat([]);
 console.time('shell');
@@ -30,3 +32,4 @@ console.timeEnd('shell');
 console.time('nativeSort');
 console.log(nativeSort.sort());
 console.timeEnd('nativeSort');
+console.log(count);

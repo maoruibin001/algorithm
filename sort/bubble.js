@@ -1,9 +1,4 @@
-function swap(arr, i, j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-}
-
+let swap = require('./swap.js');
 var count = 0;
 function bubble(arr) {
     let hasSwap = true;
