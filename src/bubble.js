@@ -24,10 +24,10 @@ const bubble = function(arr, count) {
 }
 
 
-var sortArr = [];
-for (var i = 0;i < 1000; i ++) {
-    sortArr.push(Math.floor(Math.random() * 10000));
-}
+var sortArr = [7,2, 3, 5, 8, 4];
+// for (var i = 0;i < 1000; i ++) {
+//     sortArr.push(Math.floor(Math.random() * 10000));
+// }
 console.time('冒泡排序耗时 ');
 console.log(bubble(sortArr));
 console.timeEnd('冒泡排序耗时 ');

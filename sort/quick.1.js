@@ -1,8 +1,24 @@
 var count = 0;
 var getMiddle = require('./getMiddle.js');
-console.log(tail)
+
+function tco(f) {
+    let funcStack = [],
+        active = false,
+        value;
+    return function() {
+        funcStack.push(arguments);
+        if (active) return;
+        active = true;
+        while (funcStack.length) {
+            value = f.apply(this, funcStack.shift());
+        }
+        active = false;
+        return value;
+    }
+}
+
+
 function quick(arr) {
-    console.log(22222);
    if (arr.length < 2) return arr;
    let middle = getMiddle(arr, 0, parseInt(arr.length / 2), arr.length - 1),
 //    let middle = parseInt(arr.length / 2),
@@ -17,5 +33,6 @@ function quick(arr) {
 }
 
 var arr = [2, 4,5, 1, 3, 6, 9, 4]
-console.log(quick(arr));
-console.log(count)
+var quick2 = tco(quick);
+console.log(quick2(arr));
+// console.log(count)

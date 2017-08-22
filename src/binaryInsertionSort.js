@@ -5,6 +5,7 @@ function binaryInsertionSort(arr, index) {
     for (let i = 1; i < arr.length; i ++) {
         let left = 0, right = i - 1, middle;
         let key = arr[i];
+        //二分查找法，找到待插入的位置
         while (left <= right) {
             middle = parseInt((left + right) / 2);
             if (key < arr[middle]) {
@@ -13,8 +14,8 @@ function binaryInsertionSort(arr, index) {
                 left = middle + 1;
             }
         }
-
-        for (var j = i - 1; j >= left; j --) {
+        // 插入
+        for (let j = i - 1; j >= left; j --) {
             arr[j + 1] = arr[j];
         }
         arr[left] = key;
@@ -23,8 +24,8 @@ function binaryInsertionSort(arr, index) {
     return arr;
 }
 
-var sortArr = [0, 1, 3, 4, 2];
-for (var i = 0;i < 1000; i ++) {
-    sortArr.push(Math.floor(Math.random() * 10000));
+let sortArr = [];
+for (let i = 0;i < 100; i ++) {
+    sortArr.push(parseInt(Math.random() * 100));
 }
 console.log(binaryInsertionSort(sortArr));

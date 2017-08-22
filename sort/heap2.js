@@ -2,9 +2,9 @@ var swap = require('./swap.js');
 count = 0;
 function heap(arr) {
     // 建堆
-    let len = arr.length;
+    let len = arr.length, newArr = arr;
     for (let i = parseInt(len / 2) - 1; i >= 0 ; i --) {
-        heapify(arr, i, len);
+        newArr = heapify(newArr, i, len);
     }
 
     for (let j = len - 1; j >= 1; j --) {
@@ -27,6 +27,8 @@ function heapify(arr, i, len) {
         swap(arr, i, max);
         heapify(arr, max, len);
     }
+
+    return arr;
 }
 
 var arr=[91,60,96,13,35,65,46,65,10,30,20,31,77,81,22];

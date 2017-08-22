@@ -1,5 +1,5 @@
-var swap = require('./swap.js');
-var count = 0;
+let swap = require('./swap.js');
+let count = 0;
 function insert(arr) {
     for (let i = 1; i < arr.length; i ++) {
         let flag = arr[i],
@@ -19,9 +19,9 @@ function insert(arr) {
     return arr;
 }
 
-var arr = [];
-for (var i = 0; i < 100; i ++) {
+let arr = [];
+for (let i = 0; i < 100; i ++) {
     arr.push(parseInt(Math.random() * 100));
 }
-console.log(JSON.stringify(insert(arr)));
+console.log(insert(arr));
 console.log(count);

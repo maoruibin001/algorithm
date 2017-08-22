@@ -1,4 +1,4 @@
-var count = 0;
+let count = 0;
 function shellSort(arr) {
     let gap = 1, times = 2;
     while(gap < arr.length / times) {
@@ -20,11 +20,11 @@ function shellSort(arr) {
 
     return arr;
 }
-var sortArr = [];
-for (var i = 0; i < 1000; i ++) {
+let sortArr = [];
+for (let i = 0; i < 1000; i ++) {
     sortArr.push(parseInt(Math.random() * 1000));
 }
-var nativeSort = sortArr.concat([]);
+let nativeSort = sortArr.concat([]);
 console.time('shell');
 console.log(shellSort(sortArr));
 console.timeEnd('shell');

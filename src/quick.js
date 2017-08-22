@@ -21,8 +21,8 @@ function quick(arr) {
 }
 
 
-var sortArr = [];
-for (var i = 0;i < 1000; i ++) {
+let sortArr = [];
+for (let i = 0;i < 1000; i ++) {
     sortArr.push(parseInt(Math.random() * 10000));
 }
 
