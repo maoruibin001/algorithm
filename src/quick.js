@@ -17,14 +17,11 @@ function quick(arr) {
         }
     }
 
-    return quick(leftArr).concat(flagValue).concat(rightArr);
+    return quick(leftArr).concat(flagValue).concat(quick(rightArr));
 }
 
 
-let sortArr = [];
-for (let i = 0;i < 1000; i ++) {
-    sortArr.push(parseInt(Math.random() * 10000));
-}
+let sortArr = [3, 2, 1, 5, 4];
 
 console.time('native sort ');
 console.log(sortArr.sort(function(a, b) {
