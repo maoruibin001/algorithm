@@ -23,6 +23,6 @@ function bubble(arr) {
 }
 
 let arr = [7,11, 4,2, 3, 75, 63, 2, 9,1, 32, 3, 75, 6, 23, 9,1, 34, 14, 10];
-
+module.exports = bubble;
 console.log(bubble(arr));
 console.log(count);
