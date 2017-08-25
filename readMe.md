@@ -8,6 +8,7 @@
 ## 注意事项
 * js统一采用es6语法
 * 测试使用mocha + Istanbul
+* mocha在windows下使用时会存在bug，不能使用istanbul cover _mocha xxx 而要直接定位到mocha地址istanbul cover node_modules/mocha/bin/_mocha xxx 
 
 ## 运行测试
 ```
