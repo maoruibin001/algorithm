@@ -1,7 +1,8 @@
 function binary(arr, key) {
     let begin = 0, end = arr.length - 1, middle;
     while(begin <= end) {
-        middle = parseInt((begin + end) / 2);
+        middle = Math.round(begin + (key - arr[begin])/(arr[end] - arr[begin]) * (end - begin) );
+        console.log(middle);
         if (arr[middle] === key) {
             return middle;
         } else if (arr[middle] < key) {//如果中间元素比查找元素还小，则下次开始查找的元素为中间元素的后面一个

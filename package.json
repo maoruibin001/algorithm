@@ -1,0 +1,30 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "* 各种排序算法的js实现。\r * 对常用的排序提供优化方案。\r * 提供单元测试。\r ## 项目目录\r * +src 源代码目录。\r * +test 单元测试目录。\r ## 注意事项\r * js统一采用es6语法\r * 测试使用mocha + Istanbul",
+  "main": "2.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha ./test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maoruibin001/algorithm.git"
+  },
+  "keywords": [
+    "algorithm"
+  ],
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0"
+  },
+  "author": "maoruibin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maoruibin001/algorithm/issues"
+  },
+  "homepage": "https://github.com/maoruibin001/algorithm#readme"
+}
